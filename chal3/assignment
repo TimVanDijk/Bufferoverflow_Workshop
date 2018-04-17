@@ -1,0 +1,24 @@
+   _____ _           _ _                          ____  
+  / ____| |         | | |                        |___ \ 
+ | |    | |__   __ _| | | ___ _ __   __ _  ___     __) |
+ | |    | '_ \ / _` | | |/ _ \ '_ \ / _` |/ _ \   |__ < 
+ | |____| | | | (_| | | |  __/ | | | (_| |  __/   ___) |
+  \_____|_| |_|\__,_|_|_|\___|_| |_|\__, |\___|  |____/ 
+                                     __/ |              
+                                    |___/               
+
+
+Given:
+	* The executable.
+
+Assumptions:
+	* The program is running on a remote server, so simply patching won't suffice.
+	* No ASLR.
+	* No stack canary.
+
+Task:
+	* Get the program to print "Succes!".
+
+Hint:
+	* Remember the program stops copying once it encounters a null byte.
+	* The source code is again very similar to those of challenge 1 and 2.

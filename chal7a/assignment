@@ -1,0 +1,24 @@
+   _____ _           _ _                         ______    
+  / ____| |         | | |                       |____  |   
+ | |    | |__   __ _| | | ___ _ __   __ _  ___      / /_ _ 
+ | |    | '_ \ / _` | | |/ _ \ '_ \ / _` |/ _ \    / / _` |
+ | |____| | | | (_| | | |  __/ | | | (_| |  __/   / / (_| |
+  \_____|_| |_|\__,_|_|_|\___|_| |_|\__, |\___|  /_/ \__,_|
+                                     __/ |                 
+                                    |___/                 
+
+Given:
+  * Source code (in main.c).
+  * The executable.
+
+Assumptions:
+  * The program is running on a remote server, so simply patching won't suffice.
+  * No stack canary.
+
+Task:
+  * Figure out buffer size
+  * Figure out how to reliably guestimate the address of the buffer without crashing the program.
+
+Hints:
+  * ASLR is enabled!!!
+  * Format string attack

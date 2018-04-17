@@ -1,0 +1,23 @@
+   _____ _           _ _                          ___  
+  / ____| |         | | |                        |__ \ 
+ | |    | |__   __ _| | | ___ _ __   __ _  ___      ) |
+ | |    | '_ \ / _` | | |/ _ \ '_ \ / _` |/ _ \    / / 
+ | |____| | | | (_| | | |  __/ | | | (_| |  __/   / /_ 
+  \_____|_| |_|\__,_|_|_|\___|_| |_|\__, |\___|  |____|
+                                     __/ |             
+                                    |___/              
+
+
+Given:
+	* The executable.
+
+Assumptions:
+	* The program is running on a remote server, so simply patching won't suffice.
+	* No ASLR.
+	* No stack canary.
+	* The source code is very similar to main.c of challenge 1.
+
+Task:
+	* Use gdb to disassemble the binary.
+	* Reconstruct the source code of the binary.
+	* Get the program to print "Succes!".

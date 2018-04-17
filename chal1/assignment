@@ -1,0 +1,27 @@
+   _____ _           _ _                          __ 
+  / ____| |         | | |                        /_ |
+ | |    | |__   __ _| | | ___ _ __   __ _  ___    | |
+ | |    | '_ \ / _` | | |/ _ \ '_ \ / _` |/ _ \   | |
+ | |____| | | | (_| | | |  __/ | | | (_| |  __/   | |
+  \_____|_| |_|\__,_|_|_|\___|_| |_|\__, |\___|   |_|
+                                     __/ |           
+                                    |___/            
+
+
+Given:
+	* Source code (in main.c).
+	* The executable.
+
+Assumptions:
+	* The program is running on a remote server, so simply patching won't suffice.
+	* No ASLR.
+	* No stack canary.
+
+Task:
+	* Use gdb to find the address at which target is stored.
+		- Either through examining the stack
+		- or by examining the offsets found in the assembly code.
+	* Compute the exact length of your input needed.
+	* Get the program to print "Succes!".
+	* Make sure you got the length right by sending a string of length n-1;
+	  this shouldn't make the program print "Succes!".
