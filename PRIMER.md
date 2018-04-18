@@ -30,7 +30,7 @@ Beter: zet het in je ~/.gdbinit.
 - Als je in de disassembly een interessante plek hebt gevonden om een breakpoint neer te zetten. Dan kan je dit doen met b *adres,
 bijvoorbeeld: `b *0x400590`.
 
-- Met `x/x100 $rsp` kan je de een groot deel van de stack weergeven: handig om te zien waar je input terecht komt en waar interessante waardes staan.
+- Met `x/100x $rsp` kan je de een groot deel van de stack weergeven: handig om te zien waar je input terecht komt en waar interessante waardes staan.
 
 
 ## Ik wil specifieke bytes gebruiken in mijn exploit, maar er zit geen knop voor op mijn toetsenbord. Wat nu? 
